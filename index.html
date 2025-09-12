@@ -6,49 +6,63 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Портфолио</title>
    <link rel="stylesheet" href="./styles/styles.css">
+   <link rel="stylesheet" href="./styles/media.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <div class="header">
+   <header class="header" id="header">
       <h1 class="header__title">Geydar Gasanov</h1>
       <p class="header__subtitle">фрилансер, веб-разработчик, <br>создание сайтов</p>
-      <div class="header__arrow">
+      <a href="#portfolio" class="header__arrow">
          <img src="./images/arrow.svg" alt="">
-      </div>
-   </div>
+      </a>
+   </header>
 
-   <div class="portfolio">
-      <div class="container">
-         <h2 class="portfolio__title">Портфолио</h2>
-         <!-- Card -->
-         <div class="portfolio__cards-wrapper">
-            <div class="card">
-               <img class="card-img" src="./images/Group 1.jpg" alt="">
-               <h3 class="card-title">Многостраничный сайт</h3>
-               <p>Верстка многостраничного сайта.</p>
+   <main>
+      <section class="portfolio" id="portfolio">
+         <div class="container">
+            <h2 class="portfolio__title">Портфолио</h2>
+            <!-- Card -->
+            <div class="portfolio__cards-wrapper">
+               <div class="card">
+                  <a class="card__link" href="forest-travel.html">
+                     <img class="card-img" src="./images/Group 1.jpg" alt="">
+                     <h3 class="card-title">Многостраничный сайт</h3>
+                     <p>Верстка многостраничного сайта.</p>
+                  </a>
+               </div>
+
+               <div class="card">
+                  <a class="card__link" href="forest-travel.html">
+                     <img class="card-img" src="./images/Group 2.jpg" alt="">
+                     <h3 class="card-title">Адаптивный лендинг</h3>
+                     <p>Верстка многостраничного сайта.</p>
+                  </a>
+               </div>
+
+               <div class="card">
+                  <a class="card__link" href="forest-travel.html">
+                     <img class="card-img" src="./images/Group 3.jpg" alt="">
+                     <h3 class="card-title">Личный сайт </h3>
+                     <p>Верстка многостраничного сайта.</p>
+                  </a>
+               </div>
+
+               <div class="card">
+                  <a class="card__link" href="forest-travel.html">
+                     <img class="card-img" src="./images/Group 4.jpg" alt="">
+                     <h3 class="card-title">Интернет магазин</h3>
+                     <p>Верстка многостраничного сайта.</p>
+                  </a>
+               </div>
             </div>
-            <div class="card">
-               <img class="card-img" src="./images/Group 2.jpg" alt="">
-               <h3 class="card-title">Адаптивный лендинг</h3>
-               <p>Верстка многостраничного сайта.</p>
-            </div>
-            <div class="card">
-               <img class="card-img" src="./images/Group 3.jpg" alt="">
-               <h3 class="card-title">Личный сайт </h3>
-               <p>Верстка многостраничного сайта.</p>
-            </div>
-            <div class="card">
-               <img class="card-img" src="./images/Group 4.jpg" alt="">
-               <h3 class="card-title">Интернет магазин</h3>
-               <p>Верстка многостраничного сайта.</p>
-            </div>
+            <!-- Card -->
          </div>
-         <!-- Card -->
-      </div>
-   </div>
+      </section>
+   </main>
 
    <footer class="footer">
       <div class="container">
@@ -86,6 +100,11 @@
          </div>
       </div>
    </footer>
+
+   <script src="./libs/jquery/jquery-3.7.1.js"></script>
+   <script src="./libs/vide/jquery.vide.min.js"></script>
+
+   <script src="./js/main.js"></script>
 </body>
 
 </html>
